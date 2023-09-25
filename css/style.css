@@ -1,0 +1,157 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(217, 243, 241);
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    min-height: 100vh;
+
+}
+.nav{
+    text-align: center;
+    padding: .5rem 1rem;
+    background-color: green;
+    
+}
+.nav ul{
+    display: inline-flex;
+    list-style: none;
+    color: antiquewhite;
+}
+.nav ul li{
+    width: 100%;
+    margin: 15px;
+    padding-left: 50px;
+   
+}
+.nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+.active, .nav ul li:hover{
+    
+    border-radius: 2px;
+    text-decoration-line: underline;
+
+} 
+.like_icon{
+    text-align: center;
+    position: relative;
+    bottom: 30px;
+}
+.about_img{
+    width: 100%;
+    float: left;
+    size: 80%;
+    margin-left: 20px;
+
+    
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+   
+   
+    padding-left: 100px;
+}
+#logo{
+    width: 200px;
+    height: 210px;
+    float: left;
+    border-radius: 50%;
+}
+.ti{
+    display:inline;
+    margin-bottom: 20px;
+}
+.container{
+    width: 100%;
+    height: 100%; 
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+.swiper{
+    width: 80%;
+    height: fit-content;
+}
+.swiper-slide img{
+    width: 100%;
+
+}
+.swiper .swiper-button-prev,.swiper .swiper-button-next{
+    color: greenyellow;
+
+}
+.swiper .swiper-pagination-bullet-active{
+    background: #fff;
+}
+
+
+
+.section-heading{
+    font-family: "Dancing script", cursive;
+    text-align: center;
+    font-size: 64px;
+    color: #0a8a10;
+    margin: 0 0 70px;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    margin: 0 auto;
+}
+.profile{
+    position: relative;
+    transition: all 0.3s;
+}
+.profile:hover{
+    transform: translateY(25px);
+}
+.profile img{
+    max-width: 100%;
+    border-radius: 50%;
+    
+    filter:drop-shadow(-20px 0 10px rgba(0,0,0,0.1));
+    cursor:pointer;
+}
+.profile:not(:first-child) img{
+    margin-left: -20px;
+}
+.profile .name{
+    position: absolute;
+    background-color: #10996d;
+    color: #fff;
+    font-family: "Bebas Neue",cursive;
+    padding: 15px 30px;
+    border-radius: -80px; left: 50%;
+    bottom: -80px; left:50%;
+    white-space: nowrap;
+    transform: translate(-50%, -50px);
+    letter-spacing: 1px;
+    font-size: 20px;
+    opacity: 0;
+    transition: all 0.3s;
+}
+.profile .name::before{
+    content: "";
+    position: absolute;
+    width: 15px; height: 15px;
+    background-color: #10996d;
+    top: 0; left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+.profile img:hover+ .name{
+    opacity: 1;
+    transform: translateX(-50%);
+    box-shadow:0 10px 20px rgba(86, 86, 198, 0.3);
+}
+.fa{
+    font-family: FontAwesome;
+    font-size: x-large;
+  }
