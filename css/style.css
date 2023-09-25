@@ -155,3 +155,48 @@ body{
     font-family: FontAwesome;
     font-size: x-large;
   }
+
+
+  /* cards */
+
+.cardcontainer{
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.card{
+    background: #fff;
+    width: 380px;
+    margin: 10px;
+    border-radius: 20px;
+}
+.card-image{
+    background-color: #3c26b8;
+    height: 170px;
+    margin-bottom: 15px;   
+    background-size: cover; 
+    border-radius: 20px 20px 0 0;
+}
+.imga{
+    background-image: url(../assets/images/img1.jpg);
+}
+.imgb{
+    background-image: url(../assets/images/img2.jpg);
+}
+.imgc{
+    background-image: url(../assets/images/img3.jpg);
+}
+.card a{
+    background-color: black;
+    color: #fff; 
+    padding: 15px 20px;
+    display: block;
+    text-align: center;
+    margin: 20px 50px ;
+}
+.card:hover{
+    background-color: black;
+    color: #fff;
+    cursor: pointer;
+    transition:all .5s ease-out;
+}
